@@ -4,56 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a41d2de0-2d07-4956-9c1f-6087e285b9ef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jl1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jl1_0__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Praktikum2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audiofiles/Eisbach Deep Snow.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audiofiles/Haydn - Symphonie # 96 Motiv.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audiofiles/MadreDFD.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audiofiles/Meltdown.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audiofiles/Motiv 5. Symphonie von Beethoven.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audiofiles/Mozart - Piano Concerto No25 Motiv.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audiofiles/Road Movie.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audiofiles/Rock 812.cut.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audiofiles/Rock 812.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audiofiles/beethoven-ohne-album.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audiofiles/kein.ogg.sondern.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audiofiles/kein.wav.sondern.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audiofiles/special.oGg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audiofiles/tanom p2 journey.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audiofiles/wellenmeister - fire.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audiofiles/wellenmeister - tranquility.cut.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audiofiles/wellenmeister - tranquility.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audiofiles/wellenmeister_awakening.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cert/AttributesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cert/AudioFileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cert/SampledFileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cert/TaggedFileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cert/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cert/WavFileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jl1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jogg-0.0.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jorbis-0.0.15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mp3spi1.9.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/studiplayer.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/tritonus_share.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/vorbisspi1.0.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AudioFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SampledFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TaggedFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WavFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/TestSubtaskA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/TestSubtaskB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/TestSubtaskC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/TestSubtaskD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/TestSubtaskE.java" afterDir="false" />
+    <list default="true" id="a41d2de0-2d07-4956-9c1f-6087e285b9ef" name="Changes" comment="Pr2.2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +23,29 @@
     <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master2" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Stefan" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -122,10 +97,13 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "vcs.Git"
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\skerk\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a41d2de0-2d07-4956-9c1f-6087e285b9ef" name="Changes" comment="" />
@@ -134,10 +112,32 @@
       <option name="presentableId" value="Default" />
       <updated>1713171039434</updated>
     </task>
+    <task id="LOCAL-00001" summary="Pr2.2">
+      <option name="closed" value="true" />
+      <created>1714645625448</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714645625448</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Pr2.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pr2.2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
