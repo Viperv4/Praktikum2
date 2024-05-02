@@ -57,11 +57,6 @@ public abstract class AudioFile {
                         }
                     }
             }
-//        if (end) {
-//            n1 = 2;
-//        } else {
-//            n1 = 1;
-//        }
             for (int i = 0; i < paths.length - 1; i++) {
                 pathname = pathname + paths[i] + "\\";
             }
