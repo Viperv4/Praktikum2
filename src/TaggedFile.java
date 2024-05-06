@@ -5,7 +5,6 @@ import java.util.Map;
 public class TaggedFile extends SampledFile {
     private String album;
 
-
     public TaggedFile() {
     }
 
