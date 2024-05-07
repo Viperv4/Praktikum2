@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a41d2de0-2d07-4956-9c1f-6087e285b9ef" name="Changes" comment="Pr2.3">
-      <change afterPath="$PROJECT_DIR$/cert/AudioFileFactoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cert/PlayListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cert/AudioFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cert/AudioFileTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cert/SampledFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cert/SampledFileTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cert/TaggedFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cert/TaggedFileTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cert/Utils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cert/WavFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cert/WavFileTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TestSubtaskA.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestSubtaskA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TestSubtaskB.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestSubtaskB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TestSubtaskC.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestSubtaskC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TestSubtaskD.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestSubtaskD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TestSubtaskE.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestSubtaskE.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +104,6 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -170,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714996412885</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Pr2.3">
+      <option name="closed" value="true" />
+      <created>1715076870827</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715076870827</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
