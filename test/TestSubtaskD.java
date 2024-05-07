@@ -1,33 +1,59 @@
 import static org.junit.Assert.assertEquals;
-
-import java.util.Map;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 import org.junit.Test;
 
-import studiplayer.basic.TagReader;
-import studiplayer.basic.WavParamReader;
-
 public class TestSubtaskD {
+
 	@Test
-	public void test_timeFormatter1() {
-		assertEquals("Time value not formatted correctly!", "02:21", TaggedFile.timeFormatter(141400816L));
-		assertEquals("Time value not formatted correctly!", "02:21", WavFile.timeFormatter(141400816L));
-		assertEquals("Time value not formatted correctly!", "02:21", SampledFile.timeFormatter(141400816L));
-	}
-
-	public void test_timeFormatter2() {
+	public void testAudioFileFactory1() {
 		try {
-			String s = TaggedFile.timeFormatter(-1L);
+			AudioFileFactory.createAudioFile("media/unknown.xyz");
+			fail("Invalid suffix should result in RuntimeException!");
 		} catch (Exception e) {
-			// expected since parameter is invalid
+			// expected
+			assertEquals("Falsche Fehlermeldung!",
+					"Unknown suffix for AudioFile \"media/unknown.xyz\"",
+					e.getMessage());
 		}
 	}
 
-	public void test_timeFormatter3() {
+	@Test
+	public void testAudioFileFactory2() {
 		try {
-			String s = TaggedFile.timeFormatter((60 * 60 + 60) * 1000000L);
+			AudioFileFactory.createAudioFile("media/unknown");
+			fail("Missing suffix should result in RuntimeException!");
 		} catch (Exception e) {
-			// expected since parameter is invalid
+			// expected
 		}
+	}
+
+	@Test
+	public void testAudioFileFactory3() {
+		try {
+			AudioFileFactory.createAudioFile("media/unknown.mp3");
+			fail("Non-readable file should result in RuntimeException!");
+		} catch (Exception e) {
+			// expected
+		}
+	}
+
+	@Test
+	public void testAudioFileFactory4() {
+		AudioFile af = AudioFileFactory.createAudioFile("audiofiles/Rock 812.mp3");
+		assertTrue("Expecting TaggedFile", af instanceof TaggedFile);
+	}
+
+	@Test
+	public void testAudioFileFactory5() {
+		AudioFile af = AudioFileFactory.createAudioFile("audiofiles/wellenmeister - tranquility.wav");
+		assertTrue("Expecting WavFile", af instanceof WavFile);
+	}
+
+	@Test
+	public void testAudioFileFactory6() {
+		AudioFile af = AudioFileFactory.createAudioFile("audiofiles/special.oGg");
+		assertTrue("Expecting TaggedFile", af instanceof TaggedFile);
 	}
 }

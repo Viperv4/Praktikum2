@@ -17,22 +17,22 @@ public class SampledFileTest {
     private SampledFile f3;
 
     @Before
-    public void setup() {
-        // Initializer block
-        // This checks the proper connection of constructors already
+    public void setup() { 
+    	// Initializer block
+    	// This checks the proper connection of constructors already
 
         try {
             f1 = new TaggedFile("audiofiles/Rock 812.mp3");
             f2 = new WavFile("audiofiles/wellenmeister - tranquility.wav");
             f3 = new TaggedFile("audiofiles/wellenmeister_awakening.ogg");
         } catch (Exception e) {
-            fail("Problem creating AudioFile objects: " + e.getMessage());
+        	fail("Problem creating AudioFile objects: " + e.getMessage());
         }
     }
 
     @Test
     public void testSuperClass() {
-        assertEquals("SampledFile is not derived from AudioFile",
+        assertEquals("SampledFile ist not derived from AudioFile",
                 "AudioFile", clazz.getSuperclass().getName());
     }
 

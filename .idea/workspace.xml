@@ -4,10 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a41d2de0-2d07-4956-9c1f-6087e285b9ef" name="Changes" comment="Pr2.2">
-      <change afterPath="$PROJECT_DIR$/src/AudioFileFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Playlist.java" afterDir="false" />
+    <list default="true" id="a41d2de0-2d07-4956-9c1f-6087e285b9ef" name="Changes" comment="Pr2.3">
+      <change afterPath="$PROJECT_DIR$/cert/AudioFileFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cert/PlayListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cert/AudioFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cert/AudioFileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cert/SampledFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cert/SampledFileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cert/TaggedFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cert/TaggedFileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cert/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cert/WavFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cert/WavFileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TestSubtaskA.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestSubtaskA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TestSubtaskB.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestSubtaskB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TestSubtaskC.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestSubtaskC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TestSubtaskD.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestSubtaskD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TestSubtaskE.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestSubtaskE.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,38 +93,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.AttributesTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AudioFileTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SampledFileTest.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.TaggedFileTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestParseFilename.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestParsePathname.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestSubtaskA.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestSubtaskB.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestSubtaskC.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestSubtaskD.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestSubtaskE.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.TestToString.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.WavFileTest.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.AttributesTest.executor": "Run",
+    "JUnit.AudioFileTest.executor": "Run",
+    "JUnit.SampledFileTest.executor": "Debug",
+    "JUnit.TaggedFileTest.executor": "Run",
+    "JUnit.TestParseFilename.executor": "Run",
+    "JUnit.TestParsePathname.executor": "Run",
+    "JUnit.TestSubtaskA.executor": "Run",
+    "JUnit.TestSubtaskB.executor": "Run",
+    "JUnit.TestSubtaskC.executor": "Run",
+    "JUnit.TestSubtaskD.executor": "Run",
+    "JUnit.TestSubtaskE.executor": "Debug",
+    "JUnit.TestToString.executor": "Run",
+    "JUnit.WavFileTest.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "discord-application"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\skerk\AppData\Roaming\Subversion</configuration>
@@ -150,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714985378556</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Pr2.3">
+      <option name="closed" value="true" />
+      <created>1714996412885</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714996412885</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -167,6 +187,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Pr2.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pr2.2" />
+    <MESSAGE value="Pr2.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pr2.3" />
   </component>
 </project>

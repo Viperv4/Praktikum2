@@ -1,6 +1,9 @@
+import java.util.LinkedList;
 import java.util.List;
 
 public class PlayList {
+    private LinkedList list = new LinkedList<>();
+
     public PlayList() {
     }
 
@@ -8,13 +11,15 @@ public class PlayList {
     }
 
     public void add(AudioFile file) {
+        list.add(file);
     }
 
     public void remove(AudioFile file) {
+        list.remove(file);
     }
 
     public int size() {
-        return 0;
+        return list.toArray().length;
     }
 
     public int getCurrent() {
@@ -38,6 +43,6 @@ public class PlayList {
     }
 
     public List<AudioFile> getList() {
-        return List.of();
+        return list;
     }
 }
