@@ -4,6 +4,8 @@ out/
 !**/src/test/**/out/
 cert/
 test/
+.idea/
+audiofiles/
 ### Eclipse ###
 .apt_generated
 .classpath
