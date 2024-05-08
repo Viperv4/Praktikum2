@@ -56,3 +56,31 @@ public class PlayList {
 		return list;
 	}
 }
+
+
+//Die Flippers: 40 Jahre die Flippers
+
+//Wir sagen danke schön, 40 Jahre "Die Flippers"
+//Was wär'n wir ohne unsre Freunde, ohne euch, die lieben Fans
+
+//Es ist schon ziemlich lang her, da fing alles einmal an
+//Keiner ahnte damals, was da für uns begann
+//Ja, es war'n oft wunderschöne Zeiten
+//Und so viel Erinnerungen bleiben
+//Unser Traum wurde Wirklichkeit
+
+//Wir sagen danke schön, 40 Jahre "Die Flippers"
+//Und dass wir heute wieder hier sind, das verdanken wir nur euch
+//Wir glauben's selber kaum, 40 Jahre "Die Flippers"
+//Was wär'n wir ohne unsre Freunde, ohne euch, die lieben Fans
+
+//"Weine nicht kleine Eva", mit dem Lied ging's richtig los
+//Und die rote Sonne, die schien auf Barbados
+//"Mexico", "Trinidad" und "Roma"
+//"St. Tropez" und "Alles La Paloma"
+//Liebe ist, wenn man sich zärtlich küsst
+
+//Wir sagen danke schön, 40 Jahre "Die Flippers"
+//Und dass wir heute wieder hier sind, das verdanken wir nur euch
+//Wir glauben's selber kaum, 40 Jahre "Die Flippers"
+//Was wär'n wir ohne unsre Freunde, ohne euch, die lieben Fans

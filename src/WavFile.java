@@ -1,8 +1,6 @@
 import static studiplayer.basic.WavParamReader.*;
 
 public class WavFile extends SampledFile {
-//    private String path;
-//    private long duration;
 	
 	public WavFile() {
 	}
