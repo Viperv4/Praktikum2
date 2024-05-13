@@ -1,7 +1,9 @@
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Scanner;
 
 public class PlayList {
 	private LinkedList list = new LinkedList<>();
@@ -11,6 +13,31 @@ public class PlayList {
 	}
 	
 	public PlayList(String m3uPathname) {
+		loadFromM3U(m3uPathname);
+	}
+	
+	public void loadFromM3U(String pathname) {
+		Scanner scanner = null;
+		list = new LinkedList<AudioFile>();
+		current = 0;
+		
+		try {
+			// open the file for reading
+			scanner = new Scanner(new File(pathname));
+			while (scanner.hasNextLine()) {
+				String line = scanner.nextLine();
+				if (!(line.charAt(0) == '#' || line.isBlank())) {
+					list.add(AudioFileFactory.createAudioFile(line));
+				}
+			}
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		} finally {
+			try {
+				scanner.close();
+			} catch (Exception e) {
+			}
+		}
 	}
 	
 	public void add(AudioFile file) {
@@ -46,9 +73,6 @@ public class PlayList {
 		if (current >= list.toArray().length || current < 0) {
 			current = 0;
 		}
-	}
-	
-	public void loadFromM3U(String pathname) {
 	}
 	
 	public void saveAsM3U(String pathname) {

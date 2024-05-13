@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a41d2de0-2d07-4956-9c1f-6087e285b9ef" name="Changes" comment="Pr2.3">
-      <change afterPath="$PROJECT_DIR$/src/TextFileIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.m3u" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AudioFileFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AudioFileFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playlist.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,8 +87,10 @@
     "Application.TextFileIO.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.AttributesTest.executor": "Run",
+    "JUnit.AudioFileFactoryTest.executor": "Run",
     "JUnit.AudioFileTest.executor": "Run",
-    "JUnit.SampledFileTest.executor": "Debug",
+    "JUnit.PlayListTest.executor": "Run",
+    "JUnit.SampledFileTest.executor": "Run",
     "JUnit.TaggedFileTest.executor": "Run",
     "JUnit.TestParseFilename.executor": "Run",
     "JUnit.TestParsePathname.executor": "Run",
@@ -99,7 +98,7 @@
     "JUnit.TestSubtaskB.executor": "Run",
     "JUnit.TestSubtaskC.executor": "Run",
     "JUnit.TestSubtaskD.executor": "Run",
-    "JUnit.TestSubtaskE.executor": "Debug",
+    "JUnit.TestSubtaskE.executor": "Run",
     "JUnit.TestToString.executor": "Run",
     "JUnit.WavFileTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
@@ -268,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715592197131</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Pr2.3">
+      <option name="closed" value="true" />
+      <created>1715593033122</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1715593033122</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -295,6 +302,11 @@
           <url>file://$PROJECT_DIR$/test/TestSubtaskC.java</url>
           <line>48</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/TestSubtaskE.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
