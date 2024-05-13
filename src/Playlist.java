@@ -1,3 +1,5 @@
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -50,6 +52,23 @@ public class PlayList {
 	}
 	
 	public void saveAsM3U(String pathname) {
+		FileWriter w = null;
+		String sep = System.getProperty("line.separator");
+		try {
+			w = new FileWriter(pathname);
+			for (Object file : list) {
+				String p = ((AudioFile) file).getPathname();
+				w.write(p + sep);
+			}
+		} catch (IOException e) {
+			throw new RuntimeException("Unable to write file " + pathname + "!");
+		} finally {
+			try {
+				w.close();
+			} catch (IOException e) {
+			}
+		}
+		
 	}
 	
 	public List<AudioFile> getList() {
