@@ -4,7 +4,6 @@ out/
 !**/src/test/**/out/
 cert/
 test/
-src/TextFileIO.java
 ### Eclipse ###
 .apt_generated
 .classpath
