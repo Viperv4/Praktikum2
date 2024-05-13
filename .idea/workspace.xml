@@ -8,9 +8,8 @@
       <change afterPath="$PROJECT_DIR$/src/TextFileIO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test.m3u" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AudioFileFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AudioFileFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715170093062</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Pr2.3">
+      <option name="closed" value="true" />
+      <created>1715592197131</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1715592197131</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
