@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class PlayList {
-	private LinkedList list = new LinkedList<>();
+	private LinkedList<AudioFile> list = new LinkedList<>();
 	private int current;
 	
 	public PlayList() {
@@ -18,7 +18,7 @@ public class PlayList {
 	
 	public void loadFromM3U(String pathname) {
 		Scanner scanner = null;
-		list = new LinkedList<AudioFile>();
+		list = new LinkedList<>();
 		current = 0;
 		
 		try {
