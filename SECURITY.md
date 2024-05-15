@@ -2,14 +2,11 @@
 
 ## Supported Versions
 
+| Version | Supported |
+|---------|-----------|
+| 2.4.x   | :x:       |
+| 2.3.x   | :x:       |
+| 2.2.x   | :x:       |
+| 2.1.x   | :x:       |
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 2.3.x   | :x:                |
-| 2.2.x   | :x:                |
-| 2.1.x   | :x:                |
-
-
-## Reporting a Vulnerability
-
-I really don't care.
+## Reporting your Mother
