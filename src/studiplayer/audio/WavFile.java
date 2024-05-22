@@ -1,3 +1,5 @@
+package studiplayer.audio;
+
 import static studiplayer.basic.WavParamReader.*;
 
 public class WavFile extends SampledFile {

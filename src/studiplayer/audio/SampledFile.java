@@ -1,3 +1,5 @@
+package studiplayer.audio;
+
 import studiplayer.basic.BasicPlayer;
 
 import static studiplayer.basic.BasicPlayer.getPosition;

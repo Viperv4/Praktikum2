@@ -1,3 +1,5 @@
+package studiplayer.audio;
+
 import studiplayer.basic.TagReader;
 
 import java.util.Map;

@@ -1,3 +1,5 @@
+package studiplayer.audio;
+
 public class AudioFileFactory {
 	public static AudioFile createAudioFile(String path) {
 		String[] path1 = path.split("\\.");
