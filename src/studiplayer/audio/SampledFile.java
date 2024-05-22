@@ -13,7 +13,7 @@ public abstract class SampledFile extends AudioFile {
 	public SampledFile() {
 	}
 	
-	public SampledFile(String path) {
+	public SampledFile(String path) throws NotPlayableException {
 		super(path);
 		pathname = path;
 	}

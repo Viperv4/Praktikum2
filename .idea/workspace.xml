@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a41d2de0-2d07-4956-9c1f-6087e285b9ef" name="Changes" comment="Pr2.4">
-      <change afterPath="$PROJECT_DIR$/src/studiplayer/audio/NotPlayableException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/AudioFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/AudioFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/AudioFileFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/AudioFileFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/PlayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/PlayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/SampledFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/SampledFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/TaggedFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/TaggedFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/WavFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/WavFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,42 +77,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.TextFileIO.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.AttributesTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AudioFileFactoryTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AudioFileTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PlayListTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SampledFileTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaggedFileTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestParseFilename.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestParsePathname.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestSubtaskA.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestSubtaskB.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestSubtaskC.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestSubtaskD.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestSubtaskE.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestToString.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.WavFileTest.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.TextFileIO.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.AttributesTest.executor": "Run",
+    "JUnit.AudioFileFactoryTest.executor": "Run",
+    "JUnit.AudioFileTest.executor": "Run",
+    "JUnit.PlayListTest.executor": "Run",
+    "JUnit.SampledFileTest.executor": "Run",
+    "JUnit.TaggedFileTest.executor": "Run",
+    "JUnit.TestParseFilename.executor": "Run",
+    "JUnit.TestParsePathname.executor": "Run",
+    "JUnit.TestSubtaskA.executor": "Run",
+    "JUnit.TestSubtaskB.executor": "Run",
+    "JUnit.TestSubtaskC.executor": "Run",
+    "JUnit.TestSubtaskD.executor": "Run",
+    "JUnit.TestSubtaskE.executor": "Run",
+    "JUnit.TestToString.executor": "Run",
+    "JUnit.WavFileTest.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="AttributesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Praktikum2" />
@@ -354,7 +346,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716372235805</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Pr2.4">
+      <option name="closed" value="true" />
+      <created>1716379467589</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1716379467589</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
