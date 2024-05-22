@@ -10,16 +10,21 @@ public class TaggedFile extends SampledFile {
 	public TaggedFile() {
 	}
 	
-	public TaggedFile(String path) {
+	public TaggedFile(String path) throws NotPlayableException {
 		super(path);
 		readAndStoreTags();
 	}
 	
-	public void readAndStoreTags() {
+	public void readAndStoreTags() throws NotPlayableException {
 		String author;
 		String title;
 		long duration;
-		Map<String, Object> tags = TagReader.readTags(getPathname());
+		Map<String, Object> tags;
+		try {
+			tags = TagReader.readTags(getPathname());
+		} catch (Exception e) {
+			throw new NotPlayableException(getPathname(), "");
+		}
 		title = (String) tags.get("title");
 		author = (String) tags.get("author");
 		album = (String) tags.get("album");

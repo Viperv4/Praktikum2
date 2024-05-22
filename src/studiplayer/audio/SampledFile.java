@@ -18,8 +18,14 @@ public abstract class SampledFile extends AudioFile {
 		pathname = path;
 	}
 	
-	public void play() {
-		player.play(pathname);
+	public void play() throws NotPlayableException {
+		try {
+			
+			player.play(pathname);
+			
+		} catch (Exception e) {
+			throw new NotPlayableException(pathname, "play");
+		}
 	}
 	
 	public void togglePause() {

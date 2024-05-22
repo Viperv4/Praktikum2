@@ -33,7 +33,7 @@ public class PlayList {
 				}
 			}
 		} catch (Exception e) {
-			throw new RuntimeException(e);
+			new NotPlayableException(pathname, "");
 		} finally {
 			try {
 				scanner.close();

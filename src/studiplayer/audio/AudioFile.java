@@ -16,14 +16,14 @@ public abstract class AudioFile {
 	
 	}
 	
-	public AudioFile(String path11) {
+	public AudioFile(String path11) throws NotPlayableException {
 		parsePathname(path11);
 		parseFilename(getFilename());
 		
 		File a = new File(pathname);
 		boolean cR = a.canRead();
 		if (!cR) {
-			throw new RuntimeException("Chef, wo Mukke");
+			throw new NotPlayableException(path11, "Chef, wo Mukke");
 		}
 	}
 	
@@ -170,7 +170,7 @@ public abstract class AudioFile {
 		}
 	}
 	
-	public abstract void play();
+	public abstract void play() throws NotPlayableException;
 	
 	public abstract void togglePause();
 	
