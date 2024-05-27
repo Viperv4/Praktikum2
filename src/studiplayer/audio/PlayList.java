@@ -101,11 +101,6 @@ public class PlayList implements Iterable {
 		return list;
 	}
 	
-	private enum SortCriterion {
-		DEFAULT, AUTHOR, TITLE, ALBUM, DURATION
-	}
-	
-	
 }
 
 
