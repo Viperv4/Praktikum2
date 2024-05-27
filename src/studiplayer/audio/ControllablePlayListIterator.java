@@ -3,7 +3,11 @@ package studiplayer.audio;
 import java.util.List;
 
 public class ControllablePlayListIterator implements Iterator {
+	public List<AudioFile> list;
+	public int in = 0;
+	
 	public ControllablePlayListIterator(List<AudioFile> list) {
+		this.list = list;
 	}
 	
 	public AudioFile jumpToAudioFile(AudioFile audioFile) {
@@ -12,11 +16,12 @@ public class ControllablePlayListIterator implements Iterator {
 	
 	@Override
 	public boolean hasNext() {
-		return false;
+		return !(list.size() == in + 1);
 	}
 	
 	@Override
 	public AudioFile next() {
-		return null;
+		in++;
+		return list.get(in);
 	}
 }

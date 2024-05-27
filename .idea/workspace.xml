@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a41d2de0-2d07-4956-9c1f-6087e285b9ef" name="Changes" comment="Pr2.4">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/AlbumComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/AlbumComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/AuthorComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/AuthorComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/Comparator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/ControllablePlayListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/ControllablePlayListIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/DurationComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/DurationComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/Iterable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/Iterable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/Iterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/Iterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/PlayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/PlayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/TitleComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/TitleComparator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +99,7 @@
     "JUnit.TestSubtaskC.executor": "Run",
     "JUnit.TestSubtaskD.executor": "Run",
     "JUnit.TestSubtaskE.executor": "Run",
+    "JUnit.TestSubtaskF.executor": "Run",
     "JUnit.TestToString.executor": "Run",
     "JUnit.WavFileTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
@@ -400,7 +392,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716801345077</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Pr2.4">
+      <option name="closed" value="true" />
+      <created>1716802361995</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1716802361995</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
