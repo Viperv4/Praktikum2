@@ -4,7 +4,7 @@ import java.util.List;
 
 public class ControllablePlayListIterator implements Iterator {
 	public List<AudioFile> list;
-	public int in = 0;
+	public int in = -1;
 	
 	public ControllablePlayListIterator(List<AudioFile> list) {
 		this.list = list;
