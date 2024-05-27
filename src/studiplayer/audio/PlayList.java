@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
-public class PlayList {
+public class PlayList implements Iterable {
 	private LinkedList<AudioFile> list = new LinkedList<>();
 	private int current;
 	
@@ -100,6 +100,12 @@ public class PlayList {
 	public List<AudioFile> getList() {
 		return list;
 	}
+	
+	private enum SortCriterion {
+		DEFAULT, AUTHOR, TITLE, ALBUM, DURATION
+	}
+	
+	
 }
 
 
