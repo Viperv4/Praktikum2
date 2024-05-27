@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a41d2de0-2d07-4956-9c1f-6087e285b9ef" name="Changes" comment="Pr2.4">
-      <change afterPath="$PROJECT_DIR$/src/studiplayer/audio/ControllablePlayListIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/studiplayer/audio/SortCriterion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/ControlablePlayListIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/AlbumComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/AlbumComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/AuthorComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/AuthorComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/Comparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/ControllablePlayListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/ControllablePlayListIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/DurationComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/DurationComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/Iterable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/Iterable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/Iterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/Iterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/PlayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/PlayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/TitleComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/TitleComparator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,41 +88,66 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.TextFileIO.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.AttributesTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AudioFileFactoryTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AudioFileTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PlayListTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SampledFileTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaggedFileTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestParseFilename.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestParsePathname.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestSubtaskA.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestSubtaskB.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestSubtaskC.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestSubtaskD.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestSubtaskE.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestToString.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.WavFileTest.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.TextFileIO.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.AttributesTest.executor": "Run",
+    "JUnit.AudioFileFactoryTest.executor": "Run",
+    "JUnit.AudioFileTest.executor": "Run",
+    "JUnit.ComparatorTest.executor": "Debug",
+    "JUnit.PlayListTest.executor": "Run",
+    "JUnit.SampledFileTest.executor": "Run",
+    "JUnit.TaggedFileTest.executor": "Run",
+    "JUnit.TestParseFilename.executor": "Run",
+    "JUnit.TestParsePathname.executor": "Run",
+    "JUnit.TestSubtaskA.executor": "Run",
+    "JUnit.TestSubtaskB.executor": "Run",
+    "JUnit.TestSubtaskB.testFactoryException.executor": "Run",
+    "JUnit.TestSubtaskC.executor": "Run",
+    "JUnit.TestSubtaskD.executor": "Run",
+    "JUnit.TestSubtaskE.executor": "Run",
+    "JUnit.TestToString.executor": "Run",
+    "JUnit.WavFileTest.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="TestSubtaskB.testFactoryException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Praktikum2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="studiplayer.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="studiplayer.test" />
+      <option name="MAIN_CLASS_NAME" value="studiplayer.test.TestSubtaskB" />
+      <option name="METHOD_NAME" value="testFactoryException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestSubtaskB.testFactoryException" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\skerk\AppData\Roaming\Subversion</configuration>
@@ -361,7 +392,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716800783922</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Pr2.4">
+      <option name="closed" value="true" />
+      <created>1716801345077</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1716801345077</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

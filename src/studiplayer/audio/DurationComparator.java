@@ -1,4 +1,10 @@
 package studiplayer.audio;
 
-public class DurationComparator {
+import java.util.Comparator;
+
+public class DurationComparator implements Comparator<AudioFile> {
+	@Override
+	public int compare(AudioFile o1, AudioFile o2) {
+		return 0;
+	}
 }

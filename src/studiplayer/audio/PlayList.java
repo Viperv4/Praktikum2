@@ -3,11 +3,12 @@ package studiplayer.audio;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
-public class PlayList implements Iterable {
+public class PlayList implements java.lang.Iterable {
 	private LinkedList<AudioFile> list = new LinkedList<>();
 	private int current;
 	
@@ -101,6 +102,27 @@ public class PlayList implements Iterable {
 		return list;
 	}
 	
+	public String getSearch() {
+		return null;
+	}
+	
+	public void setSearch(String something) {
+	}
+	
+	public SortCriterion getSortCriterion() {
+		return null;
+	}
+	
+	public void setSortCriterion(SortCriterion sortCriterion) {
+	}
+	
+	public void jumpToAudioFile(AudioFile tf2) {
+	}
+	
+	@Override
+	public Iterator<AudioFile> iterator() {
+		return null;
+	}
 }
 
 
