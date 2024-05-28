@@ -11,12 +11,16 @@ import java.util.Scanner;
 public class PlayList implements java.lang.Iterable {
 	private LinkedList<AudioFile> list = new LinkedList<>();
 	private int current;
+	private String search;
+	private SortCriterion sortCriterion;
 	
 	public PlayList() {
+		sortCriterion = SortCriterion.DEFAULT;
 	}
 	
 	public PlayList(String m3uPathname) {
 		loadFromM3U(m3uPathname);
+		sortCriterion = SortCriterion.DEFAULT;
 	}
 	
 	public void loadFromM3U(String pathname) {
@@ -103,17 +107,19 @@ public class PlayList implements java.lang.Iterable {
 	}
 	
 	public String getSearch() {
-		return null;
+		return search;
 	}
 	
-	public void setSearch(String something) {
+	public void setSearch(String e) {
+		search = e;
 	}
 	
 	public SortCriterion getSortCriterion() {
-		return null;
+		return sortCriterion;
 	}
 	
-	public void setSortCriterion(SortCriterion sortCriterion) {
+	public void setSortCriterion(SortCriterion e) {
+		sortCriterion = e;
 	}
 	
 	public void jumpToAudioFile(AudioFile tf2) {
