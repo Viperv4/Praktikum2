@@ -11,7 +11,14 @@ public class AlbumComparator implements Comparator<AudioFile> {
 			TaggedFile o21 = (TaggedFile) o2;
 			return o11.getAlbum().compareTo(o21.getAlbum());
 		} catch (Exception e) {
+			if (o1.getClass() != TaggedFile.class) {
+				if (o2.getClass() != TaggedFile.class) {
+					return 0;
+				}
+				return -1;
+			} else {
+				return 1;
+			}
 		}
-		return -1;
 	}
 }

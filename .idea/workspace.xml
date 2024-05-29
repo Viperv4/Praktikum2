@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a41d2de0-2d07-4956-9c1f-6087e285b9ef" name="Changes" comment="Pr2.4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/ControllablePlayListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/ControllablePlayListIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/PlayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/PlayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/AlbumComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/AlbumComparator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +88,7 @@
     "JUnit.AttributesTest.executor": "Run",
     "JUnit.AudioFileFactoryTest.executor": "Run",
     "JUnit.AudioFileTest.executor": "Run",
-    "JUnit.ComparatorTest.executor": "Debug",
+    "JUnit.ComparatorTest.executor": "Run",
     "JUnit.PlayListTest.executor": "Run",
     "JUnit.SampledFileTest.executor": "Run",
     "JUnit.TaggedFileTest.executor": "Run",
@@ -467,7 +466,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716964815875</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Pr2.4">
+      <option name="closed" value="true" />
+      <created>1716970642923</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1716970642923</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Pr2.4">
+      <option name="closed" value="true" />
+      <created>1716970744266</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1716970744266</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -487,5 +502,21 @@
     <MESSAGE value="Pr2.3" />
     <MESSAGE value="Pr2.4" />
     <option name="LAST_COMMIT_MESSAGE" value="Pr2.4" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/studiplayer/test/TestSubtaskG.java</url>
+          <line>193</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cert/studiplayer/cert/ComparatorTest.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
