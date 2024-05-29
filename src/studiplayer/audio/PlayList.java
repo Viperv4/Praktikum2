@@ -8,11 +8,12 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
-public class PlayList implements java.lang.Iterable {
+public class PlayList implements Iterable<AudioFile> {
 	private LinkedList<AudioFile> list = new LinkedList<>();
 	private int current;
 	private String search;
 	private SortCriterion sortCriterion;
+	private studiplayer.audio.ControllablePlayListIterator it;
 	
 	public PlayList() {
 		sortCriterion = SortCriterion.DEFAULT;
@@ -122,12 +123,13 @@ public class PlayList implements java.lang.Iterable {
 		sortCriterion = e;
 	}
 	
-	public void jumpToAudioFile(AudioFile tf2) {
+	public Iterator<AudioFile> iterator() {
+		it = new ControllablePlayListIterator(list, search, sortCriterion);
+		return it;
 	}
 	
-	@Override
-	public Iterator<AudioFile> iterator() {
-		return null;
+	public void jumpToAudioFile(AudioFile tf2) {
+		it.jumpToAudioFile(tf2);
 	}
 }
 
