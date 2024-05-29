@@ -10,10 +10,10 @@ import java.util.Scanner;
 
 public class PlayList implements Iterable<AudioFile> {
 	private LinkedList<AudioFile> list = new LinkedList<>();
-	private int current;
 	private String search;
 	private SortCriterion sortCriterion;
 	private studiplayer.audio.ControllablePlayListIterator it;
+	private AudioFile curr;
 	
 	public PlayList() {
 		sortCriterion = SortCriterion.DEFAULT;
@@ -27,7 +27,6 @@ public class PlayList implements Iterable<AudioFile> {
 	public void loadFromM3U(String pathname) {
 		Scanner scanner = null;
 		list = new LinkedList<>();
-		current = 0;
 		
 		try {
 			// open the file for reading
@@ -50,6 +49,8 @@ public class PlayList implements Iterable<AudioFile> {
 	
 	public void add(AudioFile file) {
 		list.add(file);
+		
+		it = new ControllablePlayListIterator(list, search, sortCriterion);
 	}
 	
 	public void remove(AudioFile file) {
@@ -60,27 +61,30 @@ public class PlayList implements Iterable<AudioFile> {
 		return list.toArray().length;
 	}
 	
-	public int getCurrent() {
-		return current;
-	}
-	
-	public void setCurrent(int current) {
-		this.current = current;
-	}
-	
 	public AudioFile currentAudioFile() {
-		try {
-			return (AudioFile) list.get(current);
-		} catch (Exception e) {
+		if (!list.isEmpty()) {
+			if (curr != null) {
+				return curr;
+			} else {
+				while (it.hasNext()) {
+					curr = it.next();
+				}
+				curr = it.next();
+				return curr;
+			}
+		} else {
 			return null;
 		}
 	}
 	
 	public void nextSong() {
-		current++;
-		if (current >= list.toArray().length || current < 0) {
-			current = 0;
+		if (it != null) {
+			curr = it.next();
 		}
+	}
+	
+	public void jumpToAudioFile(AudioFile tf2) {
+		curr = it.jumpToAudioFile(tf2);
 	}
 	
 	public void saveAsM3U(String pathname) {
@@ -113,6 +117,8 @@ public class PlayList implements Iterable<AudioFile> {
 	
 	public void setSearch(String e) {
 		search = e;
+		it = new ControllablePlayListIterator(list, search, sortCriterion);
+		curr = null;
 	}
 	
 	public SortCriterion getSortCriterion() {
@@ -121,15 +127,13 @@ public class PlayList implements Iterable<AudioFile> {
 	
 	public void setSortCriterion(SortCriterion e) {
 		sortCriterion = e;
+		it = new ControllablePlayListIterator(list, search, sortCriterion);
+		curr = null;
 	}
 	
 	public Iterator<AudioFile> iterator() {
 		it = new ControllablePlayListIterator(list, search, sortCriterion);
 		return it;
-	}
-	
-	public void jumpToAudioFile(AudioFile tf2) {
-		it.jumpToAudioFile(tf2);
 	}
 }
 

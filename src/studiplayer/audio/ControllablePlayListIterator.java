@@ -6,7 +6,7 @@ import java.util.List;
 
 public class ControllablePlayListIterator implements Iterator {
 	public List<AudioFile> list;
-	public int in = -1;
+	public int in = 0;
 	
 	public ControllablePlayListIterator(List<AudioFile> list) {
 		this.list = list;
@@ -47,6 +47,7 @@ public class ControllablePlayListIterator implements Iterator {
 	}
 	
 	public AudioFile jumpToAudioFile(AudioFile audioFile) {
+		in = list.indexOf(audioFile);
 		return audioFile;
 	}
 	
@@ -57,7 +58,12 @@ public class ControllablePlayListIterator implements Iterator {
 	
 	@Override
 	public AudioFile next() {
-		in++;
-		return list.get(in);
+		if (!hasNext()) {
+			in = 0;
+			return list.get(in);
+		} else {
+			in++;
+			return list.get(in);
+		}
 	}
 }
