@@ -34,11 +34,14 @@ public class PlayList implements Iterable<AudioFile> {
 			while (scanner.hasNextLine()) {
 				String line = scanner.nextLine();
 				if (!(line.charAt(0) == '#' || line.isBlank())) {
-					list.add(AudioFileFactory.createAudioFile(line));
+					try {
+						list.add(AudioFileFactory.createAudioFile(line));
+					} catch (NotPlayableException e) {
+					}
 				}
 			}
 		} catch (Exception e) {
-			new NotPlayableException(pathname, "");
+			new NotPlayableException(pathname, e);
 		} finally {
 			try {
 				scanner.close();
@@ -134,6 +137,19 @@ public class PlayList implements Iterable<AudioFile> {
 	public Iterator<AudioFile> iterator() {
 		it = new ControllablePlayListIterator(list, search, sortCriterion);
 		return it;
+	}
+	
+	@Override
+	public String toString() {
+		String str = "[";
+		for (AudioFile af : list) {
+			if (str == "[") {
+				str = str + af.toString();
+			} else {
+				str = str + ", " + af.toString();
+			}
+		}
+		return str + "]";
 	}
 }
 
