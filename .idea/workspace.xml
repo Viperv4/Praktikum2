@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a41d2de0-2d07-4956-9c1f-6087e285b9ef" name="Changes" comment="Pr2.4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pl.m3u" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/ControllablePlayListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/ControllablePlayListIterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/PlayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/PlayList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +91,7 @@
     "JUnit.ComparatorTest.executor": "Run",
     "JUnit.ControllablePlayListIteratorTest.executor": "Run",
     "JUnit.NotPlayableExceptionTest.executor": "Run",
-    "JUnit.PlayListTest.executor": "Debug",
+    "JUnit.PlayListTest.executor": "Run",
     "JUnit.SampledFileTest.executor": "Run",
     "JUnit.SortCriterionTest.executor": "Run",
     "JUnit.TaggedFileTest.executor": "Run",
@@ -511,7 +509,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716983736979</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Pr2.4">
+      <option name="closed" value="true" />
+      <created>1716988894205</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1716988894205</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -544,6 +550,11 @@
           <url>file://$PROJECT_DIR$/cert/studiplayer/cert/ComparatorTest.java</url>
           <line>100</line>
           <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cert/studiplayer/cert/PlayListTest.java</url>
+          <line>198</line>
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

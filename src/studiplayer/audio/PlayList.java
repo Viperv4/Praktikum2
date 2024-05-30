@@ -42,6 +42,7 @@ public class PlayList implements Iterable<AudioFile> {
 			}
 		} catch (Exception e) {
 			new NotPlayableException(pathname, e);
+			throw new RuntimeException(e);
 		} finally {
 			try {
 				scanner.close();
@@ -54,6 +55,7 @@ public class PlayList implements Iterable<AudioFile> {
 		list.add(file);
 		
 		it = new ControllablePlayListIterator(list, search, sortCriterion);
+		it.next();
 	}
 	
 	public void remove(AudioFile file) {
@@ -121,7 +123,7 @@ public class PlayList implements Iterable<AudioFile> {
 	public void setSearch(String e) {
 		search = e;
 		it = new ControllablePlayListIterator(list, search, sortCriterion);
-		curr = null;
+		curr = it.next();
 	}
 	
 	public SortCriterion getSortCriterion() {
@@ -131,7 +133,7 @@ public class PlayList implements Iterable<AudioFile> {
 	public void setSortCriterion(SortCriterion e) {
 		sortCriterion = e;
 		it = new ControllablePlayListIterator(list, search, sortCriterion);
-		curr = null;
+		curr = it.next();
 	}
 	
 	public Iterator<AudioFile> iterator() {
