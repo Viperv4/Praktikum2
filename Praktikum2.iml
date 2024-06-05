@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/cert" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -19,7 +20,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="jl1.0" level="project" />
+    <orderEntry type="library" exported="" name="libfx" level="project" />
     <orderEntry type="library" name="jl1.0 (2)" level="project" />
   </component>
 </module>

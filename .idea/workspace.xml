@@ -5,8 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a41d2de0-2d07-4956-9c1f-6087e285b9ef" name="Changes" comment="Pr2.4">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/libfx.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/GuessANumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playlists/DefaultPlayList.m3u" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playlists/DemoQueen.m3u" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playlists/Queen.m3u" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playlists/empty.m3u" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playlists/playList.cert.m3u" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playlists/test.m3u" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/studiplayer/audio/icons/add.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/studiplayer/audio/icons/next.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/studiplayer/audio/icons/pause.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/studiplayer/audio/icons/play.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/studiplayer/audio/icons/shuffle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/studiplayer/audio/icons/stop.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/studiplayer/audio/icons/trash.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jl1_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/PlayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/PlayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Praktikum2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Praktikum2.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +99,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.GuessANumber.executor": "Run",
     "Application.TextFileIO.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.AttributesTest.executor": "Run",
@@ -107,43 +124,41 @@
     "JUnit.TestSubtaskG.executor": "Run",
     "JUnit.TestToString.executor": "Run",
     "JUnit.WavFileTest.executor": "Run",
+    "JUnit.studiplayer.cert in Praktikum2.executor": "Debug",
+    "JUnit.studiplayer.test in Praktikum2.executor": "Debug",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Project",
+    "last_opened_file_path": "C:/Users/skerk/IdeaProjects/javafx-sdk-22.0.1/lib/javafx.web.jar",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "rearrange.code.on.save": "true",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\skerk\IdeaProjects\Praktikum2\examples" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="TestSubtaskB.testFactoryException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GuessANumber" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="GuessANumber" />
       <module name="Praktikum2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="studiplayer.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="studiplayer.test" />
-      <option name="MAIN_CLASS_NAME" value="studiplayer.test.TestSubtaskB" />
-      <option name="METHOD_NAME" value="testFactoryException" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="--module-path C:\Users\skerk\IdeaProjects\javafx-sdk-22.0.1\lib --add-modules=javafx.controls" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.TestSubtaskB.testFactoryException" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -517,7 +532,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716988894205</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Pr2.4">
+      <option name="closed" value="true" />
+      <created>1717058471261</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1717058471261</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -537,26 +560,5 @@
     <MESSAGE value="Pr2.3" />
     <MESSAGE value="Pr2.4" />
     <option name="LAST_COMMIT_MESSAGE" value="Pr2.4" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/studiplayer/test/TestSubtaskG.java</url>
-          <line>193</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cert/studiplayer/cert/ComparatorTest.java</url>
-          <line>100</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cert/studiplayer/cert/PlayListTest.java</url>
-          <line>198</line>
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
