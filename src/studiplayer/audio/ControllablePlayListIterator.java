@@ -59,17 +59,21 @@ public class ControllablePlayListIterator implements Iterator {
 	
 	@Override
 	public AudioFile next() {
-		if (first) {
-			first = false;
-			return list.get(in);
-		} else {
-			if (!hasNext()) {
-				in = 0;
+		if (!(list.isEmpty())) {
+			if (first) {
+				first = false;
 				return list.get(in);
 			} else {
-				in++;
-				return list.get(in);
+				if (!hasNext()) {
+					in = 0;
+					return list.get(in);
+				} else {
+					in++;
+					return list.get(in);
+				}
 			}
+		} else {
+			return null;
 		}
 	}
 }

@@ -49,6 +49,7 @@ public class PlayList implements Iterable<AudioFile> {
 			} catch (Exception e) {
 			}
 		}
+		it = new ControllablePlayListIterator(list);
 	}
 	
 	public void add(AudioFile file) {
