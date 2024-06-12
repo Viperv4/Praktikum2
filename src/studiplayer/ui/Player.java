@@ -51,6 +51,7 @@ public class Player extends Application {
 		GridPane gp3 = new GridPane();
 		VBox vb = new VBox();
 		sortChoiceBox = new ChoiceBox<>();
+		sortChoiceBox.getItems().addAll("DEFAULT", "AUTHOR", "TITLE", "ALBUM", "DURATION");
 		filterButton = new Button("Ballers");
 		searchTextField = new TextField();
 		gp.add(sortChoiceBox, 0, 0);

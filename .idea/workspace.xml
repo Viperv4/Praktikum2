@@ -6,16 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a41d2de0-2d07-4956-9c1f-6087e285b9ef" name="Changes" comment="Pr2.5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/ControllablePlayListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/ControllablePlayListIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/PlayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/PlayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/SortCriterion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/SortCriterion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/icons/add.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/add.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/icons/next.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/next.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/icons/pause.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/pause.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/icons/play.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/play.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/icons/shuffle.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/shuffle.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/icons/stop.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/stop.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/icons/trash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/trash.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/studiplayer/ui/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/ui/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +144,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Player">
+  <component name="RunManager" selected="JUnit.studiplayer.test in Praktikum2">
     <configuration name="GuessANumber" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="GuessANumber" />
@@ -172,10 +162,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="studiplayer.test in Praktikum2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Praktikum2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="studiplayer.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="studiplayer.test" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.GuessANumber" />
       <item itemvalue="Application.Player" />
+      <item itemvalue="JUnit.studiplayer.test in Praktikum2" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.studiplayer.test in Praktikum2" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -188,14 +198,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713171039434</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Pr2.3">
-      <option name="closed" value="true" />
-      <created>1714996412885</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1714996412885</updated>
     </task>
     <task id="LOCAL-00005" summary="Pr2.3">
       <option name="closed" value="true" />
@@ -581,7 +583,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718100560444</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Pr2.5">
+      <option name="closed" value="true" />
+      <created>1718176395507</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1718176395507</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
