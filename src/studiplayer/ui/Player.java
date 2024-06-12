@@ -14,10 +14,11 @@ import studiplayer.audio.PlayList;
 import java.net.URL;
 
 public class Player extends Application {
-	public static String DEFAULT_PLAYLIST = "playlists/playList.cert.m3u";
-	private static String PLAYLIST_DIRECTORY;
-	private static String INITIAL_PLAY_TIME_LABEL;
-	private static String NO_CURRENT_SONG;
+	//public static final String DEFAULT_PLAYLIST = "playlists/playList.cert.m3u";
+	public static final String DEFAULT_PLAYLIST = "playlists/DefaultPlayList.m3u";
+	private static final String PLAYLIST_DIRECTORY = "playlists/";
+	private static final String INITIAL_PLAY_TIME_LABEL = "00:00";
+	private static final String NO_CURRENT_SONG = "ncs";
 	
 	private boolean useCertPlayList = true;
 	private PlayList playList = new PlayList();
