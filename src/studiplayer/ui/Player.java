@@ -11,12 +11,14 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import studiplayer.audio.AudioFile;
 import studiplayer.audio.NotPlayableException;
 import studiplayer.audio.PlayList;
 import studiplayer.audio.SortCriterion;
 
+import java.io.File;
 import java.net.URL;
 
 public class Player extends Application {
@@ -52,7 +54,6 @@ public class Player extends Application {
 	
 	@Override
 	public void start(Stage stage) throws Exception {
-		loadPlayList(path);
 		BorderPane mainPane = new BorderPane();
 		BorderPane.setAlignment(mainPane, Pos.CENTER);
 		TitledPane tp = new TitledPane();
@@ -104,6 +105,16 @@ public class Player extends Application {
 		vb.setAlignment(Pos.CENTER);
 		tp.setContent(gp);
 		mainPane.setTop(tp);
+		if (!useCertPlayList) {
+			FileChooser fileChooser = new FileChooser();
+			fileChooser.setTitle("Open Resource File");
+			try {
+				File file = fileChooser.showOpenDialog(stage);
+				path = file.getPath();
+			} catch (Exception e) {
+			}
+		}
+		loadPlayList(path);
 		try {
 			st = new SongTable(playList);
 			mainPane.setCenter(st);
@@ -116,15 +127,6 @@ public class Player extends Application {
 		setButtonStates(true, false, false, true);
 		stage.setScene(scene);
 		stage.show();
-	}
-	
-	public void loadPlayList(String path) {
-		this.path = path;
-		if (path != null) {
-			playList.loadFromM3U(path);
-		} else {
-			playList.loadFromM3U(DEFAULT_PLAYLIST);
-		}
 	}
 	
 	private Button createButton(String iconfile) {
@@ -144,6 +146,15 @@ public class Player extends Application {
 			System.exit(-1);
 		}
 		return button;
+	}
+	
+	public void loadPlayList(String path) {
+		this.path = path;
+		if (path != null) {
+			playList.loadFromM3U(path);
+		} else {
+			playList.loadFromM3U(DEFAULT_PLAYLIST);
+		}
 	}
 	
 	private void buttonSetUp() {
@@ -182,10 +193,10 @@ public class Player extends Application {
 		
 		if (st != null) {
 			st.setRowSelectionHandler(e -> {
-				playList.currentAudioFile().stop();
+				stopCur();
 				playList.jumpToAudioFile(st.getSelectionModel().getSelectedItem().getAudioFile());
 				try {
-					playList.currentAudioFile().play();
+					playCur();
 				} catch (NotPlayableException ex) {
 					throw new RuntimeException(ex);
 				}
@@ -202,38 +213,46 @@ public class Player extends Application {
 	}
 	
 	public void playCur() throws NotPlayableException {
-		setButtonStates(false, true, true, true);
-		curpl = true;
-		startThreads(false);
+		if (playList.size() != 0) {
+			setButtonStates(false, true, true, true);
+			curpl = true;
+			startThreads(false);
+		}
 	}
 	
 	public void pause() throws NotPlayableException {
-		if (curpl) {
-			curpl = false;
-			playList.currentAudioFile().togglePause();
-			terminateThreads(true);
-			setButtonStates(false, true, true, true);
-		} else {
-			curpl = true;
-			startThreads(true);
+		if (playList.size() != 0) {
+			if (curpl) {
+				curpl = false;
+				playList.currentAudioFile().togglePause();
+				terminateThreads(true);
+				setButtonStates(false, true, true, true);
+			} else {
+				curpl = true;
+				startThreads(true);
+			}
 		}
 	}
 	
 	public void stopCur() {
-		curpl = false;
-		terminateThreads(false);
-		playList.currentAudioFile().stop();
-		setButtonStates(true, false, false, true);
+		if (playList.size() != 0) {
+			curpl = false;
+			terminateThreads(false);
+			playList.currentAudioFile().stop();
+			setButtonStates(true, false, false, true);
+		}
 	}
 	
 	public void next() throws NotPlayableException {
-		curpl = false;
-		terminateThreads(false);
-		playList.currentAudioFile().stop();
-		setButtonStates(true, false, false, true);
-		playList.nextSong();
-		startThreads(true);
-		playCur();
+		if (playList.size() != 0) {
+			curpl = false;
+			terminateThreads(false);
+			playList.currentAudioFile().stop();
+			setButtonStates(true, false, false, true);
+			playList.nextSong();
+			startThreads(true);
+			playCur();
+		}
 	}
 	
 	private void startThreads(boolean onlyTimer) {
