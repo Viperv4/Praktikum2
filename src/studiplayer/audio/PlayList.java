@@ -33,10 +33,12 @@ public class PlayList implements Iterable<AudioFile> {
 			scanner = new Scanner(new File(pathname));
 			while (scanner.hasNextLine()) {
 				String line = scanner.nextLine();
-				if (!(line.charAt(0) == '#' || line.isBlank())) {
-					try {
-						list.add(AudioFileFactory.createAudioFile(line));
-					} catch (NotPlayableException e) {
+				if (!line.isBlank()) {
+					if (!(line.charAt(0) == '#')) {
+						try {
+							list.add(AudioFileFactory.createAudioFile(line));
+						} catch (NotPlayableException e) {
+						}
 					}
 				}
 			}
