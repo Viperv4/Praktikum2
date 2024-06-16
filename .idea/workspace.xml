@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a41d2de0-2d07-4956-9c1f-6087e285b9ef" name="Changes" comment="Pr2.5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studiplayer/ui/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/ui/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studiplayer/audio/PlayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studiplayer/audio/PlayList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,14 +217,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713171039434</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Pr2.3">
-      <option name="closed" value="true" />
-      <created>1715077683823</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1715077683823</updated>
     </task>
     <task id="LOCAL-00009" summary="Pr2.3">
       <option name="closed" value="true" />
@@ -610,7 +602,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718468455115</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Pr2.5">
+      <option name="closed" value="true" />
+      <created>1718536735930</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1718536735930</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

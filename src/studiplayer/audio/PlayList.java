@@ -41,8 +41,12 @@ public class PlayList implements Iterable<AudioFile> {
 				}
 			}
 		} catch (Exception e) {
-			new NotPlayableException(pathname, e);
-			throw new RuntimeException(e);
+			try {
+				throw new NotPlayableException(pathname, e);
+			} catch (NotPlayableException ex) {
+				throw new RuntimeException(ex);
+			}
+//			throw new RuntimeException(e);
 		} finally {
 			try {
 				scanner.close();
