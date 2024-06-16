@@ -240,6 +240,7 @@ public class Player extends Application {
 			terminateThreads(false);
 			playList.currentAudioFile().stop();
 			setButtonStates(true, false, false, true);
+			playTimeLabel.setText(INITIAL_PLAY_TIME_LABEL);
 		}
 	}
 	
@@ -319,7 +320,7 @@ public class Player extends Application {
 				if (!stopped) {
 					playList.nextSong();
 					updateSongInfo(playList.currentAudioFile());
-					setButtonStates(true, false, false, true);
+					setButtonStates(false, true, true, true);
 				}
 			}
 		}
@@ -337,7 +338,7 @@ public class Player extends Application {
 			while (!stopped) {
 				updateSongInfo(playList.currentAudioFile());
 				try {
-					sleep(100);
+					sleep(10);
 				} catch (InterruptedException e) {
 					throw new RuntimeException(e);
 				}
@@ -345,7 +346,7 @@ public class Player extends Application {
 		}
 		
 		public void terminate() {
-		
+			stopped = true;
 		}
 	}
 }
